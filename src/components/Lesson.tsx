@@ -16,7 +16,7 @@ const Lesson = () => {
   
   return (
     <section>
-      <h2 className='text-center mx-auto text-slate-300 my-8 text-4xl'>{title}</h2>
+      <h2 className='text-center mx-auto my-8 text-slate-300 text-4xl uppercase'>{title}</h2>
       {activities.map((activity: Activity, index: number) => {
         return <ActivityCard key={index} activity={activity} index={index} />
       })}

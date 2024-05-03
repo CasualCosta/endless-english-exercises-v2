@@ -2,7 +2,7 @@ import { getPerson } from "../../database/peopleData";
 import { getRandomElement } from "../../utils";
 
 const getQuestion = () => {
-    const isMale = Math.floor(Math.random() * 2)
+    const isMale = Math.floor(Math.random() * 2) == 1
     const personOne = getPerson(isMale).firstName
     const personTwo = getPerson(!isMale).firstName
     const adjectives = ['funny', 'boring', 'quiet', 'calm', 'stressed', 'nervous', 'sad', 'happy', 'smart', 'talented', 'weird', 'normal', 'regular', 'simple', 'complicated']

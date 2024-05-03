@@ -1,4 +1,4 @@
-import { getBool, getRandomElement, getArticle } from "../../utils";
+import { getBool, getRandomElement } from "../../utils";
 import { getPerson, getPeople } from '../../database/peopleData'
 import { regularVerbs } from "../../database/verbData";
 

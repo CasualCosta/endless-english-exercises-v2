@@ -4,8 +4,9 @@ import { getPerson, getPeople } from "../../database/peopleData"
 
 const getQuestion = () => {
     const isPlural = getBool();
+    const isMale = getBool();
     const verb = isPlural ? 'are' : 'is'
-    const subject = isPlural ? getPeople() : getPerson();
+    const subject = isPlural ? getPeople() : getPerson(isMale);
     const occupationFalse = getRandomElement(occupations)
     let occupationTrue = getRandomElement(occupations)
     while (occupationFalse === occupationTrue)

@@ -4,7 +4,8 @@ import { getPerson, getPeople } from "../../database/peopleData"
 
 const getQuestion = () => {
     const isPlural = getBool();
-    const subject = isPlural ? getPeople() : getPerson();
+    const isMale = getBool();
+    const subject = isPlural ? getPeople() : getPerson(isMale);
     const occupation = getRandomElement(occupations)
     const article = isPlural ? '' : getArticle(occupation) + ' ';
     const prompt = `${subject.firstName} / ${occupation}`

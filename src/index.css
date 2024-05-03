@@ -1,10 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
-  background: rgb(7, 89, 133);
-background: linear-gradient(0deg, rgba(7, 89, 133) 0%, rgba(12, 74, 100,1) 100%);
+  background: rgb(15 23 42);
+  font-family: Lato;
+  /* background: linear-gradient(180deg, rgba(12 74 110) 0%, rgba(22 78 99) 100%); */
 }
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

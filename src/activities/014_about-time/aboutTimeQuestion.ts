@@ -9,7 +9,6 @@ const getQuestion = () => {
     const aux = isPlural ? "do" : "does"
     const verb = getRandomVerb()
     const object = getRandomElement(verb.objects)
-    const time = `${Math.floor((Math.random() * 8) + 2)}${getBool() ? 'am' : 'pm'}`
 
     const prompt = `${subject.firstName} / ${verb.infinitive} ${object}`
     const answer = `What time ${aux} ${subject.firstName} ${verb.infinitive} ${object}?`

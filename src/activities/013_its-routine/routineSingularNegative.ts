@@ -1,6 +1,5 @@
-import { getRandomDay } from "../../database/daysOfTheWeekData";
 import { getRandomVerb } from "../../database/verbData";
-import { getPerson, getPeople } from "../../database/peopleData";
+import { getPerson } from "../../database/peopleData";
 import { getBool, getRandomElement } from "../../utils";
 
 const getQuestion = () => {

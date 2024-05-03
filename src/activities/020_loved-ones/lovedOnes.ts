@@ -1,6 +1,5 @@
 import { getBool, getRandomElement } from "../../utils";
 import { getPerson, getPeople } from '../../database/peopleData'
-import { getRandomVerb } from "../../database/verbData";
 
 const verbs = [
     'love',

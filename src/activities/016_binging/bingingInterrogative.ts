@@ -5,7 +5,7 @@ import { countableFoodItems, uncountableFoodItems } from "../../database/foodDat
 
 const getQuestion = () => {
     const isPlural = getBool()
-    const subject = isPlural ? getPeople() : getPerson()
+    const subject = isPlural ? getPeople() : getPerson(getBool())
 
     const isCountable = getBool()
     const food = getRandomElement(isCountable ? countableFoodItems : uncountableFoodItems)

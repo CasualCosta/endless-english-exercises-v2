@@ -810,7 +810,7 @@ const data: {title: string, activities: Activity[]}[] = [
                     prompt: 'John studies English.',
                     answer: 'John studied English.'
                 },
-                getQuestion: yesterdayRewrite
+                getQuestion: yesterdayDayOfTheWeek
             },
             {
                 description: 'Write past sentences based on the prompts. Follow the example:',

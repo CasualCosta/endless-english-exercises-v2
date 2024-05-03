@@ -3,8 +3,8 @@ import { getRandomElement } from "../../utils";
 import { getPerson, getPeople } from "../../database/peopleData";
 
 const getQuestion = () => {
-    const isPlural = Math.floor(Math.random() * 2);
-    const isMale = Math.floor(Math.random() * 2);
+    const isPlural = Math.floor(Math.random() * 2) == 0;
+    const isMale = Math.floor(Math.random() * 2) == 0;
 
     const subject = isPlural ?
         getPeople().firstName :

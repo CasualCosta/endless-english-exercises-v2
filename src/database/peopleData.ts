@@ -29,7 +29,7 @@ const femaleNames = [
     "Vanessa"
 ]
 
-export const getPerson = (isMale:boolean) => {
+export function getPerson(isMale:boolean) {
     const type = isMale ? 'male' : 'female';
     const firstName = isMale ? 
     maleNames[Math.floor(Math.random() * maleNames.length)] : 
